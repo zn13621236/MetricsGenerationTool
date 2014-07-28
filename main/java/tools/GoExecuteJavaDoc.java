@@ -122,8 +122,8 @@ public class GoExecuteJavaDoc {
                         entry.setPriority (pri.substring (pri.indexOf ("{") + 1, pri.indexOf ("}")));
                         //set known issue
                         String testName = testCase.get (i+1);
-                        if (testName.contains ("RPWS")) {
-                            entry.setKnownBugs (testName.substring (testName.indexOf ("RPWS"), testName.indexOf (")") - 1));
+                        if (testName.contains ("RPW")) {
+                            entry.setKnownBugs (testName.substring (testName.indexOf ("RPW"), testName.indexOf (")") - 1));
                         }
                         // get automation test case name
                         entry.setAutomationCaseName (testName.substring (testName.indexOf ("void") + 5, testName.indexOf ("(")));
